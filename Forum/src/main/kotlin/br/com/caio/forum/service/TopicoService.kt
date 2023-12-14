@@ -20,7 +20,7 @@ class TopicoService(private var topicos: List<Topico> = ArrayList(),
     }
 
     fun cadastrar(dto: TopicoDTO){
-        topicos.plus(Topico(
+        topicos = topicos.plus(Topico(
             id = topicos.size.toLong() + 1,
             titulo = dto.titulo,
             mensagem = dto.mensagem,
