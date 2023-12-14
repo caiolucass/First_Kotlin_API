@@ -1,6 +1,6 @@
 package br.com.caio.forum.dto
 
-data class TopicoDTO (
+data class TopicoDTOInput (
            val idCurso: Long,
            val titulo: String,
            val mensagem: String,
